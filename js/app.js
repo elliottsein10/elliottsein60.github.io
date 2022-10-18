@@ -76,3 +76,14 @@ const eliminarCurso=(e)=>{
         generaHTML();
     }
 }
+
+const cargarEventListener = () => {
+    //Agregar función de carga de cursos al carrito
+    listaCursos.addEventListener('click', agregarCurso);
+
+    contenedorCarrito.addEventListener("click",eliminarCurso);
+
+    vaciarCarritoBtn.addEventListener("click",vaciarCarrito);
+}
+
+cargarEventListener();
