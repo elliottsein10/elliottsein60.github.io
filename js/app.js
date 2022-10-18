@@ -62,3 +62,7 @@ const generaHTML = () => {
         contenedorCarrito.appendChild(row);
     });
 }
+
+const vaciarCarrito = () => {
+    contenedorCarrito.innerHTML = ' ';
+}
